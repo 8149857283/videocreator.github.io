@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video creation</title>
+</head>
+<style>
+    body {background-color: black;}
+    #one{display: flex;position:sticky;}
+    .logo{ height:100px; width: 100px; margin:07px;}
+    #navbar {  word-spacing: 20px; text-decoration: none; margin:30px;} 
+    .a {text-decoration: none;color: aliceblue;font-size: larger;}
+ .a:hover{ background-color:aliceblue; color: black; cursor: Pointer; 
+        transition:All  ease-in-out;transform:scale(2.8);} 
+    #A { background-image: url(img2.webp); color: aliceblue;
+        background-repeat: no-repeat;background-size: cover; margin-top: 10px;
+        height: 300px; width: 100%;padding-top: 100px;}
+    #B {display: flex;}
+    #b { color: aliceblue; margin-right: 30px; padding: 20px;}
+    #form { color: aliceblue; margin-left: 100px; padding: 20px;}
+    .c {width: 340px;}
+    #Message {color: aliceblue;}
+    #Msg {color: aliceblue;}
+    #button {width: 340px;cursor: pointer; }
+    #C {color: aliceblue;margin-left: 120px;}
+    #D {color: aliceblue;display: flex;height: 300px;}
+    .d {margin-left: 55px; height: 250px;  width: 250px; }
+    .d:hover{  transition:All  ease-in-out;transform:scale(1.1);} 
+    .e{height: 150px; width: 250px;}
+    .f{color: aliceblue;}
+    #follow{color: aliceblue;}
+    #symbol{display:flex; margin-left: 480px;}  
+    .img{height: 50px; width: 50px; margin-left: 60px;}
+    .img:hover{ cursor: Pointer; transition:All  ease-in-out;transform:scale(1.8);} 
+
+/*media query*/
+
+ @media screen and (min-width: 320px) and (max-width: 425px){
+    
+#navbar { word-spacing: 15px; text-decoration: none; margin:30px;}
+.a {text-decoration: none;color: aliceblue;font-size: 15px;}
+.a:hover{ background-color:aliceblue; color: black; cursor: Pointer; 
+    transition:All  ease-in-out;transform:scale(2.8);} 
+#A { background-image: url(img1.jpg); color: aliceblue; 
+    background-repeat: no-repeat; width:100%;height:200px;margin-top: 10px;
+    padding-top: 25px;}
+#B {flex-direction: column;}
+#b { color: aliceblue;  height:520px; width:370px; }
+#form { color: aliceblue;  height:500px; width:400px; margin-left: 0px;}
+.c {width: 370px;}
+#Message {color: aliceblue;}
+#Msg {color: aliceblue;}
+#button {width:370px;cursor: pointer; }
+#C {color: aliceblue;margin-left: 100px;}
+#D { flex-direction: column; color: aliceblue;height: 1200px;}
+.d {margin-left: 80px; height: 350px;  width: 230px; }
+.d:hover{  transition:All  ease-in-out;transform:scale(1.1);} 
+.e{height: 150px; width: 230px;}
+.f{color: aliceblue; margin-left: 30px;}
+#follow{color: aliceblue;}
+#symbol{display:flex; margin-left: 10px;}
+.img{height: 50px; width: 50px; margin-left: 60px; margin-bottom: 40px ;}
+.img:hover{ cursor: Pointer; transition:All  ease-in-out;transform:scale(1.2);}
+ }
+
+ @media screen and (min-width: 426px) and (max-width: 768px){
+    
+    body {background-color: black;}
+    #one{display: flex;position:sticky;}
+    .logo{ height:100px; width: 100px; margin:07px;}
+    #navbar {  word-spacing: 20px; text-decoration: none; margin:30px;} 
+    .a {text-decoration: none;color: aliceblue;font-size:larger;}
+ .a:hover{ background-color:aliceblue; color: black; cursor: Pointer; 
+        transition:All  ease-in-out;transform:scale(2.8);} 
+    #A { background-image: url(img1.jpg); color: aliceblue;
+        background-repeat: no-repeat;background-size: cover; margin-top: 10px;
+        height: 300px; width: 100%;padding-top: 100px;}
+    #B {display: flex;}
+    #b { color: aliceblue; margin-right: -80px; padding: 20px; width: fit-content;} 
+    #form { color: aliceblue; margin-left: 50px; padding: 20px;}
+    .c {width: 340px;}
+    #Message {color: aliceblue;}
+    #Msg {color: aliceblue;}
+    #button {width: 340px;cursor: pointer; }
+    #C {color: aliceblue;margin-left: 120px;}
+    #D {color: aliceblue;display: flex;height: 400px;}
+    .d {margin-left: 30px; height: 250px;  width: 150px; }
+    .d:hover{  transition:All  ease-in-out;transform:scale(1.1);} 
+    .e{height: 150px; width: 150px;}
+    .f{color: aliceblue;}
+    #follow{color: aliceblue;}
+    #symbol{display:flex; margin-left: 180px;}  
+    .img{height: 50px; width: 50px; margin-left: 60px;}
+    .img:hover{ cursor: Pointer; transition:All  ease-in-out;transform:scale(1.2);} 
+     }
+    
+
+     @media screen and (min-width: 769px) and (max-width: 1024px){
+    
+    body {background-color: black;}
+    #one{display: flex;position:sticky;}
+    .logo{ height:100px; width: 100px; margin:07px;}
+    #navbar {  word-spacing: 20px; text-decoration: none; margin:30px;} 
+    .a {text-decoration: none;color: aliceblue;font-size: xx-large;}
+ .a:hover{ background-color:aliceblue; color: black; cursor: Pointer; 
+        transition:All  ease-in-out;transform:scale(2.8);} 
+    #A { background-image: url(img1.jpg); color: aliceblue;
+        background-repeat: no-repeat;background-size: cover; margin-top: 10px;
+        height: 300px; width: 100%;padding-top: 100px;}
+    #B {display: flex;}
+    #b { color: aliceblue; margin-right: -80px; padding: 20px; width: fit-content;} 
+    #form { color: aliceblue; margin-left: 50px; padding: 20px;}
+    .c {width: 340px;}
+    #Message {color: aliceblue;}
+    #Msg {color: aliceblue;}
+    #button {width: 340px;cursor: pointer; }
+    #C {color: aliceblue;margin-left: 120px;}
+    #D {color: aliceblue;display: flex;height: 400px;}
+    .d {margin-left: 80px; height: 250px;  width: 150px; }
+    .d:hover{  transition:All  ease-in-out;transform:scale(1.1);} 
+    .e{height: 150px; width: 150px;}
+    .f{color: aliceblue;}
+    #follow{color: aliceblue;}
+    #symbol{display:flex; margin-left: 300px; margin-bottom: 100px;}  
+    .img{height: 50px; width: 50px; margin-left: 60px;}
+    .img:hover{ cursor: Pointer; transition:All  ease-in-out;transform:scale(1.2);} 
+     }
+    
+
+     @media screen and (min-width: 2560px) and (max-width: 2652px){
+        body {background-color: black;}
+    #one{display: flex;position:sticky;}
+    .logo{ height:150px; width: 150px; margin:07px;}
+    #navbar {  word-spacing: 20px; text-decoration: none; margin-top:50px;} 
+    .a {text-decoration: none;color: aliceblue; font-size: xx-large;}
+ .a:hover{ background-color:aliceblue; color: black; cursor: Pointer; 
+        transition:All  ease-in-out;transform:scale(2.8);} 
+    #A { background-image: url(img2.webp); color: aliceblue;  font-size: xx-large;
+        background-repeat: no-repeat;background-size: cover; margin-top: 10px;
+        height: 650px; width: 100%;padding-top: 100px;}
+    #B {display: flex;}
+    #b { color: aliceblue; margin-right: 30px; padding: 20px; font-size: xx-large;}
+    #form { color: aliceblue; margin-left: 100px; padding: 20px;font-size: xx-large;}
+    .c {width: 620px; font-size: xx-large;}
+    #Message {color: aliceblue;}
+    #Msg {color: aliceblue;}
+    #button {width: 620px;cursor: pointer;font-size: xx-large; }
+    #C {color: aliceblue;margin-left: 120px;}
+    #D {color: aliceblue;display: flex;height: 800px; }
+    .d {margin:175px; height: 350px;width: 250px; }
+    .d:hover{  transition:All  ease-in-out;transform:scale(1.1);} 
+    .e{height: 450px; width: 450px;}
+    .f{color: aliceblue;font-size: xx-large; margin-top: 50px ; }
+    .f1{color: aliceblue;font-size: xx-large; }
+    #follow{color: aliceblue;font-size: xx-large;margin-top: 150px;
+        margin-bottom: 50px;}
+    #symbol{display:flex; margin-left: 1140px; margin-bottom: 150px;}  
+    .img{height: 50px; width: 50px; margin-left: 60px;}
+    .img:hover{ cursor: Pointer; transition:All  ease-in-out;transform:scale(1.8);} 
+     }
+
+
+    
+</style>
+
+<body>
+<div id="one">
+    <div class="logo"><img src="logo.jpeg"class="logo"></div>
+    <div>
+        <nav id="navbar">
+            <span><a href=" " class="a">Home</a></span>
+            <span><a href="Images.html" class="a">Images</a></span>
+            <span><a href="About.html" class="a">About</a></spann>
+            <sapn><a href="Contact.html" class="a">Contact</a></span>
+        </nav> 
+    </div>
+</div>
+    <div id="A">
+        <center>
+            <h1>Video Creator Code</h1>
+            <h3>Learn how to create high quality videos from start to finish.</h3>
+        </center>
+    </div>
+    <div id="B">
+        <div id="b">
+            <h1> Video containt is taking over </h1>
+                <h3>
+                    <p> Video has become the most engaging format,and <br>it's become more important than ever to
+                        take advantage of it.<br>The Video creator Cource has been disign for begainers and
+                        professionals <br> to take their video creation process to the next level. </p>
+                </h3>
+             <h1>Who is this course for ? </h1>
+                        <h3>
+                        <p> Video has become the most engaging format,and <br>it's become more important than ever to
+                            take advantage of it.<br>The Video creator Cource has been disign for begainers and
+                            professionals <br> to take their video creation process to the next level. </p>
+                       </h3> 
+        </div>
+        <div id="form" >
+            <h1>Registration Form </h1>
+            <form onsubmit="return myFun()" name="forms" action = "submitted.html">
+                Name : <br>
+                <input type=" text" id="name" class="c" value="" placeholder="Your Name.">
+                <span id="Msg"></span> <br><br>
+
+                Mobile No :<br>
+                <input type=" text" id="mobile" class="c" value="" placeholder="Your Mobile no.">
+                <span id="Message"></span> <br><br>
+
+                Email Id:<br>
+                <input type="text" id="mail" class="c" value="" placeholder="Your Valid E-mail Id.">
+                <span id="Id"></span> <br><br>
+
+                gender:
+                <input type="radio" id="m" name="om" value="male">male</input>
+                <input type="radio" id="f" name="om" value="female">female</input>
+                <span id="gender"></span> <br><br>
+
+                select your education :
+                <input type="checkbox" id="ma" name="education" value="SCC">SCC</input>
+                <input type="checkbox" id="hi" name="education" value="HSC">HSC</input>
+                <input type="checkbox" id="hin" name="education" value="Graduation">Graduation</input><span id="kk"> </span> <br><br>
+                <input type="reset" value=" reset" id="button"> <br><br>
+                <input type="submit" value=" submit" id="button">
+            </form>
+        </div>
+    </div> 
+     
+    <center> <h2 class="f"> What to expect </h2> <h3 class="f">We've splite the course into a number of modules.</h3></center>
+    <div id="D">
+        <div class="d"><img src="img1.jpg" class="e"> <h3 class="f1" >Scripting and inspiration</h3> Coming up with ideas, putting those down into a script, and script structure.Perfect the process.</div>
+        <div class="d"><img src="img2.webp" class="e"><h3 class="f1"> Camera setup</h3> Recommanded camera setup and camera setting to get the most of your camera.Make sure you get the best quality.</div>
+        <div class="d"><img src="image3.jpg" class="e"> <h3 class="f1"> Scene setup</h3> Setting up your scene. figuring out the perfect talking-head setup. and lighting setup.</div>
+        <div class="d"><img src="image4.jpg" class="e"><h3 class="f1">Scripting and inspiration</h3> Coming up with ideas, putting those down into a script, and script structure.Perfect the process.</div>    
+    </div>
+    <div id="D">
+        <div class="d"><img src="image3.jpg" class="e"> <h3 class="f1">Scripting and inspiration</h3> Coming up with ideas, putting those down into a script, and script structure.Perfect the process.</div>
+        <div class="d"><img src="image4.jpg" class="e"><h3 class="f1"> Camera setup</h3> Recommanded camera setup and camera setting to get the most of your camera.Make sure you get the best quality.</div>
+        <div class="d"><img src="img1.jpg" class="e"> <h3 class="f1"> Scene setup</h3> Setting up your scene. figuring out the perfect talking-head setup. and lighting setup.</div>
+        <div class="d"><img src="img2.webp" class="e"><h3 class="f1">Scripting and inspiration</h3> Coming up with ideas, putting those down into a script, and script structure.Perfect the process.</div>     
+    </div> 
+    
+   <center><h2 id="follow">Follow Me</h2></center> 
+    <div id="symbol">
+    
+     <div class="a1"> <img src="fb.png" class="img"></div>
+     <div class="a1"> <img src="Insta.png" class="img"></div>
+     <div class="a1"><img src="twitter.png" class="img"></div>
+    </div>
+ 
+
+
+
+    <script>
+        function myFun() {
+            var o = document.getElementById("name").value;
+            var a = document.getElementById("mobile").value;
+            var g = document.getElementById("mail").value;
+            var b = document.getElementById("m").checked;
+            var c = document.getElementById("f").checked;
+            var d = document.getElementById("ma").checked;
+            var e = document.getElementById("hi").checked;
+            var f = document.getElementById("hin").checked;
+           
+
+            if (o == "") {
+                document.getElementById("Msg").innerHTML = "**please fill your  name";
+                return false;
+            }
+            if (a == "") {
+                document.getElementById("Message").innerHTML = "**please fill mobile no";
+                return false;
+            }
+            if (a.length < 10) {
+                document.getElementById("Message").innerHTML = "** mobile must be 10 charracter";
+                return false;
+            }
+            if (a.length > 10) {
+                document.getElementById("Message").innerHTML = "** mobile only 10 number";
+                return false;
+            }
+            if (isNaN(a)) {
+                document.getElementById("Message").innerHTML = "** please entire numbers";
+                return false;
+            }
+            if ((a.charAt(0) != 9) && (a.charAt(0) != 8) && (a.charAt(0) != 7)) {
+                document.getElementById("Message").innerHTML = "** numbers start with 9,8 or 7 ";
+                return false;
+            }
+            if (a.length == 10) { true; }
+
+            if (g == "") {
+                document.getElementById("Id").innerHTML = "**please fill your  email id";
+                return false;
+             }
+
+            if ((b == "") && (c == "")) {
+                document.getElementById("gender").innerHTML = "** please select anyone";
+                return false;
+            }
+            if ((d == "") && (e == "") && (f == "")) {
+                document.getElementById("kk").innerHTML = "** please select anyone option";
+                return false;
+            }
+
+        }
+
+    </script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>

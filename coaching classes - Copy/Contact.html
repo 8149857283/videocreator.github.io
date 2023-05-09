@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video creater/Contact</title>
+</head>
+<style>
+    body {
+        background-color: black;
+    }
+
+    #one {
+        display: flex;
+    }
+
+    .logo {
+        height: 100px;
+        width: 100px;
+        margin: 07px;
+    }
+
+    #navbar {
+        word-spacing: 20px;
+        text-decoration: none;
+        margin: 30px;
+    }
+
+    .a {
+        text-decoration: none;
+        color: aliceblue;
+        font-size: larger;
+    }
+
+    .a:hover {
+        background-color: aliceblue;
+        color: black;
+        cursor: Pointer;
+        transition: All ease-in-out;
+        transform: scale(2.8);
+    }
+    #a{color:aliceblue; font-size: larger;}
+
+
+    /* media query*/
+
+    @media screen and (min-width: 320px) and (max-width: 425px){
+     #one {display: flex;}
+.logo { height: 80px;width: 80px;margin: 07px;}
+#navbar {word-spacing:10px;text-decoration: none;margin-left: 15px; margin-top:30px}
+.a {text-decoration: none;color: aliceblue;font-size:15px ;}
+.a:hover {background-color: aliceblue;color: black;cursor: Pointer;
+    transition: All ease-in-out;transform: scale(2.8);}
+
+    
+
+    }
+
+    @media screen and (min-width: 426px) and (max-width: 768px){
+
+    }
+
+    @media screen and (min-width: 2560px) and (max-width: 2652px){
+    #one{display: flex;position:sticky;}
+    .logo{ height:150px; width: 150px; margin:07px;}
+    #navbar {  word-spacing: 20px; text-decoration: none; margin-top:50px;} 
+    .a {text-decoration: none;color: aliceblue; font-size: xx-large;}
+ .a:hover{ background-color:aliceblue; color: black; cursor: Pointer; 
+        transition:All  ease-in-out;transform:scale(2.8);} 
+ }
+
+
+
+
+
+</style>
+
+<body>
+    <div id="one">
+        <div class="logo"><img src="logo.jpeg" class="logo"></div>
+        <div>
+            <nav id="navbar">
+                <span><a href="video.html" class="a">Home</a></span>
+                <span><a href="Images.html" class="a">Images</a></span>
+                <span><a href="About.html" class="a">About</a></spann>
+                <sapn><a href=" " class="a">Contact</a></span>
+            </nav>
+        </div>
+    </div>
+    <center>
+    <p id="a"> Customer Support No : 220-2938587548, 020- 20303044050<br>
+               Contact No : 9765580940, 9765803745 <br>
+               Whatsapp No. 9785805509 <br>
+               E-mail Id: contact@1234.gmail.com <br>
+               Address : Shivnagar, Kondhava Bk, Pune 411001</p>
+</center>
+</body>
+
+</html>

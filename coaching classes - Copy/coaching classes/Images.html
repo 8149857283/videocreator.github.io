@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video creator/Images</title>
+
+</head>
+<style>
+    body {background-color: black;}
+
+    #one {display: flex;}
+
+    .logo { height: 100px;width: 100px;margin: 07px;}
+
+    #navbar {word-spacing: 20px;text-decoration: none;margin: 30px;}
+
+    .a {text-decoration: none;color: aliceblue;font-size: larger;}
+
+    .a:hover {background-color: aliceblue;color: black;cursor: Pointer;
+        transition: All ease-in-out;transform: scale(2.8);}
+
+    .images {display: flex;height: 250px;}
+
+    .img { height: 200px; width: 280px;margin: 20px;}
+
+    .img:hover {cursor: Pointer;transition: All ease-in-out;transform: scale(1.1);}
+
+    .e {height: 200px;width: 280px;}
+
+    /*media query*/
+
+ @media screen and (min-width: 320px) and (max-width: 425px){
+       
+#one {display: flex;}
+
+.logo { height: 80px;width: 80px;margin: 07px;}
+
+#navbar {word-spacing:10px;text-decoration: none;margin-left: 15px; margin-top:30px}
+
+.a {text-decoration: none;color: aliceblue;font-size:15px ;}
+
+.a:hover {background-color: aliceblue;color: black;cursor: Pointer;
+    transition: All ease-in-out;transform: scale(2.8);}
+
+.images { flex-direction: column;height: 1000px;}
+
+.img { height: 200px; width: 280px;margin: 20px;}
+
+.img:hover {cursor: Pointer;transition: All ease-in-out;transform: scale(1.1);}
+
+.e {height: 200px;width: 280px;}
+ }
+
+ @media screen and (min-width: 426px) and (max-width: 768px){
+
+    #one {display: flex;}
+
+    .logo { height: 100px;width: 100px;margin: 07px;}
+
+    #navbar {word-spacing: 20px;text-decoration: none;margin: 30px;}
+
+    .a {text-decoration: none;color: aliceblue;font-size: larger;}
+
+    .a:hover {background-color: aliceblue;color: black;cursor: Pointer;
+        transition: All ease-in-out;transform: scale(2.8);}
+
+    .images {display: flex;height: 250px;}
+
+    .img { height: 200px; width: 180px;margin: 50px;}
+
+    .img:hover {cursor: Pointer;transition: All ease-in-out;transform: scale(1.1);}
+
+    .e {height: 200px;width: 280px;}
+ }
+        
+ @media screen and (min-width: 2560px) and (max-width: 2652px){
+    #one{display: flex;position:sticky;}
+    .logo{ height:150px; width: 150px; margin:07px;}
+    #navbar {  word-spacing: 20px; text-decoration: none; margin-top:50px;} 
+    .a {text-decoration: none;color: aliceblue; font-size: xx-large;}
+ .a:hover{ background-color:aliceblue; color: black; cursor: Pointer; 
+        transition:All  ease-in-out;transform:scale(2.8);} 
+    #navbar {  word-spacing: 20px; text-decoration: none; margin-top:50px;} 
+    .images {display: flex;height: 500px; width:100%;}
+    .img { height: 200px; width: 280px;margin: 160px;}
+    .img:hover {cursor: Pointer;transition: All ease-in-out;transform: scale(1.1);}
+    .e {height: 400px;width: 480px; margin-right: 150px;}
+ }
+        
+</style>
+
+<body>
+    <div id="one">
+        <div class="logo"><img src="logo.jpeg" class="logo"></div>
+        <div>
+            <nav id="navbar">
+                <span><a href="video.html" class="a">Home</a></span>
+                <span><a href=" " class="a">Images</a></span>
+                <span><a href="About.html" class="a">About</a></spann>
+                    <sapn><a href="Contact.html" class="a">Contact</a>
+                </span>
+            </nav>
+        </div>
+    </div>
+    <div class="images">
+        <div class="img"> <img src="img1.jpg" class="e"></div>
+        <div class="img"> <img src="img2.webp" class="e"></div>
+        <div class="img"> <img src="image3.jpg" class="e"> </div>
+        <div class="img"> <img src="image4.jpg" class="e"></div>
+    </div>
+    <div class="images">
+        <div class="img"> <img src="image5.jpg" class="e"></div>
+        <div class="img"> <img src="image6.jpg" class="e"></div>
+        <div class="img"> <img src="image7.jpg" class="e"></div>
+        <div class="img"> <img src="image8.jpg" class="e"></div>
+    </div>
+    <div class="images">
+        <div class="img"> <img src="img1.jpg" class="e"></div>
+        <div class="img"> <img src="img2.webp" class="e"></div>
+        <div class="img"> <img src="image3.jpg" class="e"> </div>
+        <div class="img"> <img src="image4.jpg" class="e"></div>
+    </div>
+    <div class="images">
+        <div class="img"> <img src="image5.jpg" class="e"></div>
+        <div class="img"> <img src="image6.jpg" class="e"></div>
+        <div class="img"> <img src="image7.jpg" class="e"></div>
+        <div class="img"> <img src="image8.jpg" class="e"></div>
+    </div>
+    <div class="images">
+        <div class="img"> <img src="img1.jpg" class="e"></div>
+        <div class="img"> <img src="img2.webp" class="e"></div>
+        <div class="img"> <img src="image5.jpg" class="e"></div>
+        <div class="img"> <img src="image6.jpg" class="e"></div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>
